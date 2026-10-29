@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mustafizur Rahman | Frontend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0a0a0b;color:#e5e5e5;line-height:1.6}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid #1f1f1f;position:sticky;top:0;background:#0a0a0bcc;backdrop-filter:blur(10px);z-index:10}
+.logo{font-weight:700;font-size:20px;color:#fff}
+.logo span{color:#7c3aed}
+nav a{color:#a1a1aa;text-decoration:none;margin-left:24px;font-size:14px}
+nav a:hover{color:#fff}
+.hero{padding:90px 0 60px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:52px;line-height:1.1;color:#fff;margin-bottom:16px}
+.hero h1 span{background:linear-gradient(90deg,#7c3aed,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:#a1a1aa;font-size:17px;margin-bottom:28px;max-width:520px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;font-size:14px;margin-right:12px}
+.btn-primary{background:#fff;color:#000}
+.btn-ghost{border:1px solid #27272a;color:#fff}
+.card{background:#121214;border:1px solid #1f1f1f;border-radius:16px;padding:20px}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.skill{background:#1a1a1d;border:1px solid #27272a;padding:10px 12px;border-radius:10px;font-size:13px;text-align:center}
+section{padding:60px 0}
+.section-title{font-size:28px;color:#fff;margin-bottom:8px}
+.section-sub{color:#71717a;font-size:14px;margin-bottom:28px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.proj:hover{transform:translateY(-4px);border-color:#3f3f46}
+.proj h3{font-size:16px;margin-bottom:6px;color:#fff}
+.proj p{font-size:13px;color:#a1a1aa;margin-bottom:12px}
+.tag{display:inline-block;background:#1f1f1f;border:1px solid #27272a;padding:4px 8px;border-radius:20px;font-size:11px;margin-right:6px;color:#d4d4d8}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+footer{padding:30px 0;border-top:1px solid #1f1f1f;color:#52525b;font-size:13px;text-align:center;margin-top:40px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.contact-box{grid-template-columns:1fr}.hero h1{font-size:36px}}
+</style>
+</head>
+<body>
+<div class="container">
+<nav>
+<div class="logo">MD <span> MUSTAFIJUR RAHMAN</span></div>
+<div><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</nav>
+<div class="hero">
+<div>
+<h1>Frontend Developer <br> focused on <span>clean & fast UI</span></h1>
+<p>I am Mustafizur Rahman. I know HTML5, CSS3, JavaScript and currently learning Angular / TypeScript. I build Responsive, Pixel-Perfect websites.</p>
+<a class="btn btn-primary" href="#work">My Projects</a>
+<a class="btn btn-ghost" href="https://github.com/" target="_blank">GitHub</a>
+</div>
+<div class="card">
+<h3 style="font-size:15px;margin-bottom:12px">Current Stack</h3>
+<div class="skill-grid">
+<div class="skill">HTML5</div><div class="skill">CSS3 / SCSS</div><div class="skill">Learning JavaScript </div>
+<div class="skill">Responsive</div><div class="skill">Git / GitHub</div><div class="skill">Learning Angular</div>
+</div>
+<div style="margin-top:18px;padding:12px;background:#18181b;border-radius:10px;font-size:13px">
+<strong style="color:#fff">Open to:</strong> Frontend Internship / Junior Frontend (Onsite - Uttara/Mirpur/Banani)<br>
+<span style="color:#71717a">Available immediately</span>
+</div>
+</div>
+</div>
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<p class="section-sub">What I work with</p>
+<div class="projects">
+<div class="card"><h3>Frontend Core</h3><p>Semantic HTML5, Modern CSS3, Flexbox, Grid, Animations</p></div>
+<div class="card"><h3>JavaScript</h3><p>DOM Manipulation, Fetch API, Async JS, Form Validation</p></div>
+<div class="card"><h3>Learning Path</h3><p>TypeScript, Angular, RxJS, REST API Integration - In Progress</p></div>
+</div>
+</section>
+<section id="work">
+<h2 class="section-title">Projects</h2>
+<p class="section-sub">Demo projects - Replace with your own projects later</p>
+<div class="projects">
+<div class="card proj"><h3>Agency Landing Page</h3><p>Modern SaaS landing page with responsive grid and animations.</p><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span></div>
+<div class="card proj"><h3>Billing Dashboard UI</h3><p>SaaS billing dashboard concept inspired by modern B2B tools.</p><span class="tag">HTML</span><span class="tag">SCSS</span><span class="tag">UI/UX</span></div>
+<div class="card proj"><h3>Angular To-Do App</h3><p>To-Do App with TypeScript and Local Storage - Learning Project.</p><span class="tag">JavaScript</span><span class="tag">Learning</span></div>
+</div>
+</section>
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="contact-box">
+<div class="card">
+<p style="font-size:14px;color:#a1a1aa">Contact for internship:</p>
+<p style="margin-top:12px"><strong>Email:</strong> rokibulalom92@gmail.com</p>
+<p><strong>Phone:</strong> 01603990384</p>
+<p><strong>Location:</strong> Mymensingh, Bangladesh</p>
+</div>
+<div class="card">
+<h3>How to use?</h3>
+<p style="color:#a1a1aa;font-size:13px;margin-top:8px">1. Email:rokibulalom92@gmail.com<br>2. Upload to GitHub<br>3. </p>
+</div>
+</div>
+</section>
+<footer>© 2026 Mustafizur Rahman — Built with HTML5, CSS3</footer>
+</div>
+</body>
+</html>
